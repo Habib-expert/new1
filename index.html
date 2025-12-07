@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Flexible Online Quran Classes — ILMA Quran Academy</title>
+    <meta name="description" content="Enroll in 1-on-1 certified Quran classes. Expert male and female tutors available 24/7 for Tajweed, Hifz, and Islamic Studies. Book your free trial today.">
+    <meta name="keywords" content="Quran online, Tajweed, Hifz, Islamic Studies, Quran tutor, Online Quran Classes, Female Quran Teacher">
+    <link rel="canonical" href="https://ilmaquran.com" />
+    
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="ILMA Quran Academy | Flexible Online Quran Classes">
+    <meta property="og:description" content="Join personalized 1-on-1 Quran sessions. Certified tutors, flexible timing. Book your 3-day free trial now.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1584286595398-a59f21d313f5?q=80&w=1000&auto=format&fit=crop">
+    <meta property="og:type" content="website">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "ILMA Quran Academy",
+      "url": "https://ilmaquran.com",
+      "logo": "https://ilmaquran.com/logo.png",
+      "description": "Online Quran Academy offering 1-on-1 classes for Tajweed, Hifz, and Islamic Studies.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+92-335-2873002",
+        "contactType": "customer service",
+        "areaServed": "World",
+        "availableLanguage": ["English", "Urdu", "Arabic"]
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How do I schedule a trial class?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Simply fill out the form on our website or contact us via WhatsApp. We will arrange a time that suits your schedule."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Are the fees refundable?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fees are paid monthly in advance and are generally non-refundable once classes for the month have commenced."
+        }
+      }]
+    }
+    </script>
+
+    <!-- Fonts: Poppins (Headings) & Lato (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons: FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Animations: AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#176B5B',       /* Teal Green */
+                        primaryDark: '#0f4c40',
+                        accent: '#D4AF37',        /* Gold */
+                        accentLight: '#f3dba3',
+                        surface: '#F8FAFC',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        lato: ['Lato', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'islamic-pattern': "url('https://www.transparenttextures.com/patterns/arabesque.png')",
+                    },
+                    screens: {
+                        'xs': '475px', // Extra small devices
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Utilities */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Accordion Transition */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary ~ * {
+            animation: sweep .3s ease-in-out;
+        }
+        @keyframes sweep {
+            0%    {opacity: 0; transform: translateY(-10px)}
+            100%  {opacity: 1; transform: translateY(0)}
+        }
+
+        /* Modal Transitions */
+        .modal {
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        }
+        .modal-content {
+            transition: transform 0.3s ease-in-out;
+        }
+        .modal.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .modal.hidden .modal-content {
+            transform: scale(0.95);
+        }
+        
+        /* Prevent iOS zoom on inputs */
+        @media screen and (max-width: 768px) {
+            input, select, textarea {
+                font-size: 16px !important;
+            }
+        }
+    </style>
+</head>
+<body class="font-lato text-gray-700 antialiased overflow-x-hidden bg-surface">
+
+    <!-- ================= NAV BAR ================= -->
+    <header class="fixed w-full z-50 bg-white/95 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 group z-50 relative">
+                <i class="fa-solid fa-book-quran text-3xl text-primary group-hover:text-accent transition-colors"></i>
+                <div class="flex flex-col">
+                    <span class="font-poppins font-bold text-2xl text-primary leading-tight tracking-tight">ILMA</span>
+                    <span class="text-xs tracking-widest text-accent font-bold uppercase">Quran Academy</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center gap-4 lg:gap-6">
+                <a href="#home" class="font-semibold text-gray-600 hover:text-primary transition text-sm lg:text-base">Home</a>
+                <a href="#why-us" class="font-semibold text-gray-600 hover:text-primary transition text-sm lg:text-base">Why Us</a>
+                <a href="#courses" class="font-semibold text-gray-600 hover:text-primary transition text-sm lg:text-base">Courses</a>
+                <a href="#pricing" class="font-semibold text-gray-600 hover:text-primary transition text-sm lg:text-base">Pricing</a>
+                <a href="#faq" class="font-semibold text-gray-600 hover:text-primary transition text-sm lg:text-base">FAQ</a>
+                <a href="#articles" class="font-semibold text-gray-600 hover:text-primary transition text-sm lg:text-base">Articles</a>
+                <a href="#policies" class="font-semibold text-gray-600 hover:text-primary transition text-sm lg:text-base">Policies</a>
+                <a href="#contact" class="px-4 lg:px-5 py-2 bg-primary text-white font-bold rounded-full hover:bg-primaryDark transition shadow-lg transform hover:-translate-y-0.5 text-xs lg:text-sm whitespace-nowrap">
+                    Start Free Trial
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false" aria-controls="mobile-menu" class="md:hidden text-2xl text-primary focus:outline-none focus:ring-2 focus:ring-primary rounded p-1 z-50 relative">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/98 backdrop-blur-xl border-t fixed w-full left-0 top-[72px] shadow-2xl z-40 h-screen pb-24 overflow-y-auto">
+            <div class="flex flex-col p-6 gap-6 text-center">
+                <a href="#home" class="mobile-link text-gray-800 font-bold text-lg py-2 border-b border-gray-100">Home</a>
+                <a href="#why-us" class="mobile-link text-gray-800 font-bold text-lg py-2 border-b border-gray-100">Why Us</a>
+                <a href="#courses" class="mobile-link text-gray-800 font-bold text-lg py-2 border-b border-gray-100">Courses</a>
+                <a href="#pricing" class="mobile-link text-gray-800 font-bold text-lg py-2 border-b border-gray-100">Pricing</a>
+                <a href="#faq" class="mobile-link text-gray-800 font-bold text-lg py-2 border-b border-gray-100">FAQ</a>
+                <a href="#articles" class="mobile-link text-gray-800 font-bold text-lg py-2 border-b border-gray-100">Articles</a>
+                <a href="#policies" class="mobile-link text-gray-800 font-bold text-lg py-2 border-b border-gray-100">Policies</a>
+                <a href="#contact" class="text-white bg-primary font-bold text-lg py-4 rounded-xl shadow-md mt-2">Start Free Trial</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="relative pt-32 pb-16 md:pt-48 md:pb-48 bg-gradient-to-br from-primary to-primaryDark overflow-hidden min-h-[90vh] md:min-h-0 flex items-center">
+        <div class="absolute inset-0 opacity-10 bg-islamic-pattern mix-blend-overlay"></div>
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-accent/5 -skew-x-12 transform origin-top-right blur-3xl"></div>
+
+        <div class="container mx-auto px-4 md:px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
+                <!-- Left Content -->
+                <div class="w-full md:w-1/2 text-center md:text-left" data-aos="fade-right">
+                    <span class="inline-block px-4 py-1 bg-accent/20 border border-accent/40 rounded-full text-accentLight font-bold text-xs md:text-sm mb-6 tracking-wide">
+                        ✨ #1 Rated Online Quran Academy
+                    </span>
+                    <h1 class="font-poppins font-bold text-3xl sm:text-4xl lg:text-6xl text-white leading-tight mb-6 text-shadow">
+                        Learn Quran from Anywhere, Anytime — <span class="text-accent block mt-2 md:inline md:mt-0">1-on-1 Certified Tutors, 24/7</span>
+                    </h1>
+                    <p class="text-gray-200 text-base md:text-xl mb-8 leading-relaxed font-lato font-light max-w-2xl mx-auto md:mx-0">
+                        Connect with expert certified tutors worldwide for personalized 1-on-1 lessons. 
+                        Tajweed, Hifz, and Islamic Studies tailored to your schedule.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start w-full sm:w-auto">
+                        <!-- Primary CTA -->
+                        <a href="#contact" 
+                           class="w-full sm:w-auto px-8 py-4 bg-accent text-primaryDark font-poppins font-bold rounded-full shadow-lg hover:shadow-accent/50 hover:scale-105 transition duration-300 flex items-center justify-center gap-2">
+                            <span>Enroll Now</span>
+                            <i class="fa-solid fa-check"></i>
+                        </a>
+                        <!-- Secondary CTA -->
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 border-2 border-white/30 text-white font-bold rounded-full hover:bg-white/10 transition flex items-center justify-center">
+                            Start Free Trial
+                        </a>
+                    </div>
+                    <div class="mt-8 flex flex-wrap items-center justify-center md:justify-start gap-4 text-white/80 text-sm">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-accent"></i> 24/7 Flexible</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-check-circle text-accent"></i> Female Tutors</div>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="w-full md:w-1/2 mt-8 md:mt-0" data-aos="fade-left">
+                    <div class="relative max-w-md mx-auto md:max-w-full">
+                        <div class="absolute inset-0 bg-accent/20 blur-3xl rounded-full transform scale-90 animate-pulse"></div>
+                        <img src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?q=80&w=1000&auto=format&fit=crop" 
+                             alt="Student learning Quran Online" 
+                             class="relative rounded-2xl shadow-2xl border-4 border-white/10 w-full h-auto object-cover max-h-[400px] md:max-h-[500px]">
+                        
+                        <div class="absolute -bottom-4 md:-bottom-6 -left-0 md:-left-6 bg-white p-3 md:p-4 rounded-xl shadow-xl flex items-center gap-3 animate-bounce z-20" style="animation-duration: 3s;">
+                            <div class="bg-green-100 p-2 md:p-3 rounded-full text-green-600">
+                                <i class="fa-solid fa-users text-lg md:text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-gray-800 text-base md:text-lg">5,000+</p>
+                                <p class="text-[10px] md:text-xs text-gray-500">Students Worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= KEY FEATURES ================= -->
+    <section id="features" class="relative z-20 -mt-10 md:-mt-20 mb-20 px-4 md:px-0">
+        <div class="container mx-auto md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl hover:-translate-y-2 transition-transform duration-300 group border-b-4 border-transparent hover:border-accent">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-chalkboard-user text-2xl text-primary group-hover:text-white group-hover:animate-pulse"></i>
+                    </div>
+                    <h3 class="font-poppins font-bold text-xl mb-2 text-gray-800">1-on-1 Classes</h3>
+                    <p class="text-sm text-gray-600">Personalized attention tailored to the student's learning pace.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl hover:-translate-y-2 transition-transform duration-300 group border-b-4 border-transparent hover:border-accent">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-certificate text-2xl text-primary group-hover:text-white group-hover:animate-pulse"></i>
+                    </div>
+                    <h3 class="font-poppins font-bold text-xl mb-2 text-gray-800">Certified Tutors</h3>
+                    <p class="text-sm text-gray-600">Qualified Hafiz and Alims with Ijazah from reputed institutions.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl hover:-translate-y-2 transition-transform duration-300 group border-b-4 border-transparent hover:border-accent">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-clock text-2xl text-primary group-hover:text-white group-hover:animate-pulse"></i>
+                    </div>
+                    <h3 class="font-poppins font-bold text-xl mb-2 text-gray-800">24/7 Flexible</h3>
+                    <p class="text-sm text-gray-600">Schedule classes at any time that suits your busy routine.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl hover:-translate-y-2 transition-transform duration-300 group border-b-4 border-transparent hover:border-accent">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-gift text-2xl text-primary group-hover:text-white group-hover:animate-pulse"></i>
+                    </div>
+                    <h3 class="font-poppins font-bold text-xl mb-2 text-gray-800">Free 3-Day Trial</h3>
+                    <p class="text-sm text-gray-600">Experience our teaching quality before you commit to pay.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section id="why-us" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+                <span class="text-primary font-bold tracking-widest uppercase text-sm">Our Mission</span>
+                <h2 class="font-poppins font-bold text-3xl md:text-5xl text-gray-900 mt-2 mb-8">Why Choose ILMA Quran Academy?</h2>
+                
+                <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                    ILMA Quran Academy was built to make Quran learning simple, personal, and accessible for every Muslim worldwide.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                    Students learn 1-on-1 with certified teachers, at flexible timings, in a warm and supportive environment rooted in Islamic values.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                    From your first Arabic letter to advanced Tajweed and Hifz, we guide your journey with care, patience, and expertise.
+                </p>
+                <p class="text-gray-900 font-bold text-xl mb-4">
+                    This isn’t just online learning — it’s a trusted path to connect with the Quran.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Thousands of families rely on ILMA Quran Academy. You can too.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= COURSES SECTION ================= -->
+    <section id="courses" class="py-20 bg-white relative">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-30"></div>
+        
+        <div class="container mx-auto px-4 md:px-6 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-primary font-bold tracking-widest uppercase text-sm">Our Syllabus</span>
+                <h2 class="font-poppins font-bold text-3xl md:text-5xl text-gray-900 mt-2">Comprehensive Quranic Education</h2>
+                <div class="w-20 h-1 bg-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Course Cards -->
+                <div class="glass-card p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group" data-aos="fade-up">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="bg-green-100 p-4 rounded-xl text-primary text-2xl"><i class="fa-solid fa-book-open"></i></div>
+                        <span class="bg-gray-100 text-gray-600 text-xs font-bold px-3 py-1 rounded-full">Beginner</span>
+                    </div>
+                    <h3 class="text-2xl font-bold font-poppins text-gray-800 mb-3">Noorani Qaida</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">The foundation of Quran reading. Learn Arabic alphabets and pronunciation rules perfectly.</p>
+                    <button onclick="bookCourse('Noorani Qaida')" class="w-full py-3 border border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-colors flex justify-center items-center gap-2">
+                        <span>Book Trial</span><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+
+                <div class="glass-card p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="bg-blue-100 p-4 rounded-xl text-blue-600 text-2xl"><i class="fa-solid fa-microphone-lines"></i></div>
+                        <span class="bg-gray-100 text-gray-600 text-xs font-bold px-3 py-1 rounded-full">Intermediate</span>
+                    </div>
+                    <h3 class="text-2xl font-bold font-poppins text-gray-800 mb-3">Tajweed Rules</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Master the art of recitation with correct pronunciation (Makharij) and characteristics.</p>
+                    <button onclick="bookCourse('Tajweed')" class="w-full py-3 border border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-colors flex justify-center items-center gap-2">
+                        <span>Book Trial</span><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+
+                <div class="glass-card p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="bg-yellow-100 p-4 rounded-xl text-yellow-600 text-2xl"><i class="fa-solid fa-brain"></i></div>
+                        <span class="bg-gray-100 text-gray-600 text-xs font-bold px-3 py-1 rounded-full">Advanced</span>
+                    </div>
+                    <h3 class="text-2xl font-bold font-poppins text-gray-800 mb-3">Quran Hifz</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Memorize the Holy Quran with a structured plan and regular revisions with Huffaz.</p>
+                    <button onclick="bookCourse('Hifz')" class="w-full py-3 border border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-colors flex justify-center items-center gap-2">
+                        <span>Book Trial</span><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+
+                <div class="glass-card p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="bg-purple-100 p-4 rounded-xl text-purple-600 text-2xl"><i class="fa-solid fa-language"></i></div>
+                        <span class="bg-gray-100 text-gray-600 text-xs font-bold px-3 py-1 rounded-full">All Levels</span>
+                    </div>
+                    <h3 class="text-2xl font-bold font-poppins text-gray-800 mb-3">Translation & Tafseer</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Understand the deep meanings and exegesis of the Quranic verses.</p>
+                    <button onclick="bookCourse('Tafseer')" class="w-full py-3 border border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-colors flex justify-center items-center gap-2">
+                        <span>Book Trial</span><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+
+                <div class="glass-card p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="bg-red-100 p-4 rounded-xl text-red-600 text-2xl"><i class="fa-solid fa-kaaba"></i></div>
+                        <span class="bg-gray-100 text-gray-600 text-xs font-bold px-3 py-1 rounded-full">Basics</span>
+                    </div>
+                    <h3 class="text-2xl font-bold font-poppins text-gray-800 mb-3">Islamic Studies</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Learn Duas, Kalimas, Salah steps, and daily Islamic ethics (Akhlaq).</p>
+                    <button onclick="bookCourse('Islamic Studies')" class="w-full py-3 border border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-colors flex justify-center items-center gap-2">
+                        <span>Book Trial</span><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+
+                <div class="glass-card p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="500">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="bg-teal-100 p-4 rounded-xl text-primary text-2xl"><i class="fa-solid fa-globe"></i></div>
+                        <span class="bg-gray-100 text-gray-600 text-xs font-bold px-3 py-1 rounded-full">Language</span>
+                    </div>
+                    <h3 class="text-2xl font-bold font-poppins text-gray-800 mb-3">Arabic Language</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Learn conversational Arabic and grammar to understand the Quran directly.</p>
+                    <button onclick="bookCourse('Arabic Language')" class="w-full py-3 border border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-colors flex justify-center items-center gap-2">
+                        <span>Book Trial</span><i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= SCHOLARSHIPS & DISCOUNTS ================= -->
+    <section class="py-12 bg-white border-t border-gray-100">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="bg-gradient-to-r from-primary/10 to-accent/10 rounded-3xl p-8 md:p-12 border border-primary/10 flex flex-col md:flex-row items-center justify-between gap-8" data-aos="fade-up">
+                <div class="flex-1 text-center md:text-left">
+                    <h2 class="font-poppins font-bold text-3xl text-primary mb-4">Financial Aid & Discounts</h2>
+                    <p class="text-gray-600 mb-6">We believe Quranic education should be accessible to everyone.</p>
+                    <div class="flex flex-col sm:flex-row flex-wrap gap-4 justify-center md:justify-start">
+                        <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-xl shadow-sm border border-gray-100">
+                            <i class="fa-solid fa-users text-accent text-xl"></i>
+                            <div class="text-left">
+                                <span class="block font-bold text-gray-800">10% Sibling Discount</span>
+                                <span class="text-xs text-gray-500">For 2nd & 3rd Child</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-xl shadow-sm border border-gray-100">
+                            <i class="fa-solid fa-hand-holding-heart text-accent text-xl"></i>
+                            <div class="text-left">
+                                <span class="block font-bold text-gray-800">Need-Based Scholarship</span>
+                                <span class="text-xs text-gray-500">Apply for Support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-auto text-center">
+                    <a href="#contact" class="inline-block w-full md:w-auto px-8 py-3 bg-primary text-white font-bold rounded-lg hover:bg-primaryDark transition shadow-md">
+                        Apply Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PRICING SECTION ================= -->
+    <section id="pricing" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-primary font-bold tracking-widest uppercase text-sm">Affordable Plans</span>
+                <h2 class="font-poppins font-bold text-3xl md:text-5xl text-gray-900 mt-2">Choose Your Plan</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Family discounts available for multiple students. Prices are monthly.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Basic -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition">
+                    <h3 class="font-bold text-gray-800 text-xl">Basic</h3>
+                    <div class="my-4"><span class="text-3xl font-bold text-primary">$35</span><span class="text-gray-500">/mo</span></div>
+                    <p class="text-sm text-gray-500 mb-6">2 Classes per week</p>
+                    <ul class="space-y-3 mb-8 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> 30 Min Session</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Flexible Timing</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> 1-on-1 Tutoring</li>
+                    </ul>
+                    <a href="#contact" class="block w-full text-center py-2 border border-gray-300 rounded-lg hover:border-primary hover:text-primary transition font-bold">Choose Plan</a>
+                </div>
+
+                <!-- Standard -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition">
+                    <h3 class="font-bold text-gray-800 text-xl">Standard</h3>
+                    <div class="my-4"><span class="text-3xl font-bold text-primary">$50</span><span class="text-gray-500">/mo</span></div>
+                    <p class="text-sm text-gray-500 mb-6">3 Classes per week</p>
+                    <ul class="space-y-3 mb-8 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> 30 Min Session</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Flexible Timing</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> 1-on-1 Tutoring</li>
+                    </ul>
+                    <a href="#contact" class="block w-full text-center py-2 border border-gray-300 rounded-lg hover:border-primary hover:text-primary transition font-bold">Choose Plan</a>
+                </div>
+
+                <!-- Premium - Adjusted Scale for Mobile -->
+                <div class="relative bg-white border-2 border-accent rounded-2xl p-6 shadow-2xl scale-100 md:transform md:scale-105 z-10 my-4 md:my-0">
+                    <div class="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">POPULAR</div>
+                    <h3 class="font-bold text-gray-800 text-xl">Premium</h3>
+                    <div class="my-4"><span class="text-3xl font-bold text-primary">$75</span><span class="text-gray-500">/mo</span></div>
+                    <p class="text-sm text-gray-500 mb-6">5 Classes per week</p>
+                    <ul class="space-y-3 mb-8 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> 30 Min Session</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Weekend Classes</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-accent"></i> Progress Reports</li>
+                    </ul>
+                    <a href="#contact" class="block w-full text-center py-2 bg-accent text-white rounded-lg hover:bg-yellow-600 transition font-bold shadow-md">Choose Plan</a>
+                </div>
+
+                <!-- Intensive -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition">
+                    <h3 class="font-bold text-gray-800 text-xl">Intensive</h3>
+                    <div class="my-4"><span class="text-3xl font-bold text-primary">$100</span><span class="text-gray-500">/mo</span></div>
+                    <p class="text-sm text-gray-500 mb-6">Daily Classes (Mon-Fri)</p>
+                    <ul class="space-y-3 mb-8 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> 45 Min Session</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Hifz Focus</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-green-500"></i> Senior Tutors</li>
+                    </ul>
+                    <a href="#contact" class="block w-full text-center py-2 border border-gray-300 rounded-lg hover:border-primary hover:text-primary transition font-bold">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-primary font-bold tracking-widest uppercase text-sm">Testimonials</span>
+                <h2 class="font-poppins font-bold text-3xl md:text-5xl text-gray-900 mt-2">What Parents Say</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                 <div class="glass-card p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="0">
+                    <div class="flex items-center gap-2 text-accent mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-gray-600 text-sm mb-4">"The teacher is very patient with my 5-year-old son. He loves his Quran class now!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-gray-500 font-bold">SA</div>
+                        <div><p class="font-bold text-sm">Sarah A.</p><p class="text-xs text-gray-500">London, UK</p></div>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center gap-2 text-accent mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-gray-600 text-sm mb-4">"Highly recommended! The flexible timings make it easy for us to manage alongside school."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-gray-500 font-bold">MR</div>
+                        <div><p class="font-bold text-sm">Mohsin R.</p><p class="text-xs text-gray-500">New York, USA</p></div>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center gap-2 text-accent mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-gray-600 text-sm mb-4">"I finished my Hifz revision here. The Qaris are very knowledgeable in Tajweed rules."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-gray-500 font-bold">YK</div>
+                        <div><p class="font-bold text-sm">Yusuf K.</p><p class="text-xs text-gray-500">Sydney, AU</p></div>
+                    </div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center gap-2 text-accent mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-gray-600 text-sm mb-4">"Best decision for my daughter. Female tutors are available and very professional."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center text-gray-500 font-bold">FK</div>
+                        <div><p class="font-bold text-sm">Fatima K.</p><p class="text-xs text-gray-500">Toronto, CA</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FAQ SECTION ================= -->
+    <section id="faq" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-6 max-w-4xl">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <span class="text-primary font-bold tracking-widest uppercase text-sm">Common Questions</span>
+                <h2 class="font-poppins font-bold text-3xl text-gray-900 mt-2">Frequently Asked Questions</h2>
+            </div>
+            <div class="space-y-4" data-aos="fade-up">
+                 <details class="group bg-white p-4 rounded-xl cursor-pointer shadow-sm">
+                    <summary class="flex justify-between items-center font-bold text-gray-800">
+                        How do I schedule a trial class?
+                        <span class="text-primary transition-transform group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 text-sm leading-relaxed">Simply fill out the form below or message us on WhatsApp. Our coordinator will schedule a time that suits your timezone.</p>
+                </details>
+                <details class="group bg-white p-4 rounded-xl cursor-pointer shadow-sm">
+                    <summary class="flex justify-between items-center font-bold text-gray-800">
+                        Are fees refundable?
+                        <span class="text-primary transition-transform group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 text-sm leading-relaxed">No, fees are non-refundable once the month has started. However, you can cancel before the new month begins.</p>
+                </details>
+                <details class="group bg-white p-4 rounded-xl cursor-pointer shadow-sm">
+                    <summary class="flex justify-between items-center font-bold text-gray-800">
+                        Do you have female tutors?
+                        <span class="text-primary transition-transform group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 text-sm leading-relaxed">Yes, we have highly qualified female tutors available for female students and children.</p>
+                </details>
+                <details class="group bg-white p-4 rounded-xl cursor-pointer shadow-sm">
+                    <summary class="flex justify-between items-center font-bold text-gray-800">
+                        Is it a video or audio call?
+                        <span class="text-primary transition-transform group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 text-sm leading-relaxed">Classes are conducted via Skype/Zoom/WhatsApp using Screen Sharing. Video is optional based on student comfort.</p>
+                </details>
+                 <details class="group bg-white p-4 rounded-xl cursor-pointer shadow-sm">
+                    <summary class="flex justify-between items-center font-bold text-gray-800">
+                        What payment methods do you accept?
+                        <span class="text-primary transition-transform group-open:rotate-180"><i class="fa-solid fa-chevron-down"></i></span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 text-sm leading-relaxed">We accept PayPal, Western Union, Bank Transfer, and other major remittance services.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= BLOG / RESOURCES ================= -->
+    <section id="articles" class="py-12 bg-white border-b border-gray-100">
+        <div class="container mx-auto px-4 md:px-6">
+            <h2 class="font-poppins font-bold text-2xl text-gray-800 mb-6">Latest Articles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Article 1 -->
+                <article class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col h-full border border-gray-100">
+                    <div class="h-40 bg-gray-200 w-full relative">
+                         <img src="https://images.unsplash.com/photo-1596700095811-da4a10a3014a?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover">
+                        <span class="absolute top-2 right-2 bg-white/90 px-2 py-1 text-xs font-bold rounded shadow-sm">Tajweed</span>
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="font-bold text-gray-800 mb-2">Importance of Makharij</h3>
+                        <p class="text-xs text-gray-500 mb-4 flex-grow">Read about why correct pronunciation changes the meaning...</p>
+                        <button onclick="openArticle('Importance of Makharij', 'Correct pronunciation (Makharij) is crucial in Quran recitation. Changing a sound can alter the entire meaning of a verse. In this article, we explore the articulation points of Arabic letters and common mistakes beginners make. Every Muslim should strive to recite the Quran as it was revealed.', 'https://images.unsplash.com/photo-1596700095811-da4a10a3014a?q=80&w=800&auto=format&fit=crop')" 
+                                class="w-full py-3 border border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-colors flex justify-center items-center gap-2">
+                            Read More
+                        </button>
+                    </div>
+                </article>
+                <!-- Article 2 -->
+                <article class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col h-full border border-gray-100">
+                    <div class="h-40 bg-gray-200 w-full relative">
+                         <img src="https://images.unsplash.com/photo-1584286595398-a59f21d313f5?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover">
+                         <span class="absolute top-2 right-2 bg-white/90 px-2 py-1 text-xs font-bold rounded shadow-sm">Hifz</span>
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="font-bold text-gray-800 mb-2">Tips for Memorization</h3>
+                        <p class="text-xs text-gray-500 mb-4 flex-grow">5 proven techniques to memorize the Quran faster...</p>
+                        <button onclick="openArticle('Tips for Memorization', 'Memorizing the Quran is a spiritual journey. 1. Start after Fajr when the mind is fresh. 2. Repeat each verse 20 times. 3. Listen to a Qari. 4. Revise yesterday’s lesson before starting new. 5. Stay consistent and make Dua for ease.', 'https://images.unsplash.com/photo-1584286595398-a59f21d313f5?q=80&w=800&auto=format&fit=crop')" 
+                                class="w-full py-3 border border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-colors flex justify-center items-center gap-2">
+                            Read More
+                        </button>
+                    </div>
+                </article>
+                 <!-- Article 3 -->
+                 <article class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col h-full border border-gray-100">
+                    <div class="h-40 bg-gray-200 w-full relative">
+                         <img src="https://images.unsplash.com/photo-1627449258284-954992982d62?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover">
+                         <span class="absolute top-2 right-2 bg-white/90 px-2 py-1 text-xs font-bold rounded shadow-sm">Parents</span>
+                    </div>
+                    <div class="p-4 flex flex-col flex-grow">
+                        <h3 class="font-bold text-gray-800 mb-2">Teaching Kids at Home</h3>
+                        <p class="text-xs text-gray-500 mb-4 flex-grow">How to create an Islamic environment for children...</p>
+                         <button onclick="openArticle('Teaching Kids at Home', 'Creating an Islamic atmosphere starts with routine. Play the Quran softly in the house. Pray Salah together. Tell stories of the Prophets before bed. Your children learn more from what you do than what you say.', 'https://images.unsplash.com/photo-1627449258284-954992982d62?q=80&w=800&auto=format&fit=crop')" 
+                                class="w-full py-3 border border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-colors flex justify-center items-center gap-2">
+                            Read More
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= POLICIES SECTION ================= -->
+    <section id="policies" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+             <div class="text-center mb-10">
+                <span class="text-primary font-bold tracking-widest uppercase text-sm">Our Commitments</span>
+                <h2 class="font-poppins font-bold text-3xl text-gray-900 mt-2">Academy Policies</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <!-- Policy Cards -->
+                <div onclick="openPolicy('privacy')" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer border border-gray-100 group transition-all">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i class="fa-solid fa-shield-halved text-accent text-xl group-hover:scale-110 transition-transform"></i>
+                        <h3 class="font-bold text-gray-800 text-lg">Privacy Policy</h3>
+                    </div>
+                    <p class="text-xs text-gray-500">How we protect and use your data.</p>
+                </div>
+
+                <div onclick="openPolicy('refund')" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer border border-gray-100 group transition-all">
+                     <div class="flex items-center gap-3 mb-2">
+                        <i class="fa-solid fa-money-bill-wave text-accent text-xl group-hover:scale-110 transition-transform"></i>
+                        <h3 class="font-bold text-gray-800 text-lg">Refund Policy</h3>
+                    </div>
+                    <p class="text-xs text-gray-500">Eligibility, timelines, and non-refundable items.</p>
+                </div>
+
+                <div onclick="openPolicy('cancellation')" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer border border-gray-100 group transition-all">
+                     <div class="flex items-center gap-3 mb-2">
+                        <i class="fa-regular fa-calendar-xmark text-accent text-xl group-hover:scale-110 transition-transform"></i>
+                        <h3 class="font-bold text-gray-800 text-lg">Cancellation Policy</h3>
+                    </div>
+                    <p class="text-xs text-gray-500">Cancelling packages and notices.</p>
+                </div>
+
+                <div onclick="openPolicy('rescheduling')" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer border border-gray-100 group transition-all">
+                     <div class="flex items-center gap-3 mb-2">
+                        <i class="fa-solid fa-clock-rotate-left text-accent text-xl group-hover:scale-110 transition-transform"></i>
+                        <h3 class="font-bold text-gray-800 text-lg">Rescheduling Policy</h3>
+                    </div>
+                    <p class="text-xs text-gray-500">Missed classes and makeup sessions.</p>
+                </div>
+
+                 <div onclick="openPolicy('payment')" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer border border-gray-100 group transition-all">
+                     <div class="flex items-center gap-3 mb-2">
+                        <i class="fa-regular fa-credit-card text-accent text-xl group-hover:scale-110 transition-transform"></i>
+                        <h3 class="font-bold text-gray-800 text-lg">Payment Policy</h3>
+                    </div>
+                    <p class="text-xs text-gray-500">Methods, invoices, and billing cycles.</p>
+                </div>
+
+                 <div onclick="openPolicy('conduct')" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer border border-gray-100 group transition-all">
+                     <div class="flex items-center gap-3 mb-2">
+                        <i class="fa-solid fa-user-graduate text-accent text-xl group-hover:scale-110 transition-transform"></i>
+                        <h3 class="font-bold text-gray-800 text-lg">Code of Conduct</h3>
+                    </div>
+                    <p class="text-xs text-gray-500">Behavioral guidelines for students and teachers.</p>
+                </div>
+
+                 <div onclick="openPolicy('safety')" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer border border-gray-100 group transition-all">
+                     <div class="flex items-center gap-3 mb-2">
+                        <i class="fa-solid fa-child-reaching text-accent text-xl group-hover:scale-110 transition-transform"></i>
+                        <h3 class="font-bold text-gray-800 text-lg">Child Safety</h3>
+                    </div>
+                    <p class="text-xs text-gray-500">Our priority on protecting young learners.</p>
+                </div>
+
+                 <div onclick="openPolicy('discrimination')" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer border border-gray-100 group transition-all">
+                     <div class="flex items-center gap-3 mb-2">
+                        <i class="fa-solid fa-scale-balanced text-accent text-xl group-hover:scale-110 transition-transform"></i>
+                        <h3 class="font-bold text-gray-800 text-lg">Anti-Discrimination</h3>
+                    </div>
+                    <p class="text-xs text-gray-500">Equality and respect for all backgrounds.</p>
+                </div>
+
+                <div onclick="openPolicy('terms')" class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md cursor-pointer border border-gray-100 group transition-all">
+                     <div class="flex items-center gap-3 mb-2">
+                        <i class="fa-solid fa-file-contract text-accent text-xl group-hover:scale-110 transition-transform"></i>
+                        <h3 class="font-bold text-gray-800 text-lg">Terms of Service</h3>
+                    </div>
+                    <p class="text-xs text-gray-500">General agreement and service updates.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT FORM SECTION ================= -->
+    <section id="contact" class="py-20 bg-primaryDark relative overflow-hidden">
+         <div class="absolute inset-0 opacity-5 bg-islamic-pattern"></div>
+
+         <div class="container mx-auto px-4 md:px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <!-- Text Area -->
+                <div class="w-full lg:w-1/2 text-white" data-aos="fade-right">
+                    <h2 class="font-poppins font-bold text-3xl md:text-4xl mb-6">Ready to start your journey?</h2>
+                    <p class="text-gray-300 text-lg mb-8">
+                        Fill out the form to schedule your free 3-day trial. Our academic coordinator will contact you via WhatsApp shortly to set up your class.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-accent shrink-0">
+                                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">WhatsApp Us</p>
+                                <p class="font-bold text-lg">+92 335 2873002</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-accent shrink-0">
+                                <i class="fa-regular fa-envelope text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Email Us</p>
+                                <p class="font-bold text-lg break-all">academyilmaquran@gmail.com.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-xs text-gray-400">
+                        <p>By submitting, you agree to our <a href="#" class="underline hover:text-white">Terms</a> and <a href="#" class="underline hover:text-white">Privacy Policy</a>.</p>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="w-full lg:w-1/2 bg-white rounded-3xl p-6 md:p-8 shadow-2xl" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold text-primary mb-6 border-b pb-4">Admission Form</h3>
+                    
+                    <form id="admissionForm" class="space-y-4">
+                        <!-- Row 1 -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1">Parent/Guardian Name *</label>
+                                <input type="text" id="parentName" required class="w-full p-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none text-base">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1">WhatsApp Number *</label>
+                                <input type="tel" id="whatsapp" placeholder="+1..." required class="w-full p-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none text-base">
+                            </div>
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="grid grid-cols-1 gap-4">
+                             <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-1">Country *</label>
+                                <input type="text" id="country" placeholder="Your Country" required class="w-full p-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none text-base">
+                            </div>
+                        </div>
+
+                        <!-- Row 3 -->
+                        <div>
+                             <label class="block text-sm font-bold text-gray-700 mb-1">Number of Students</label>
+                             <select id="studentCount" onchange="updateChildFields()" class="w-full p-3 bg-gray-50 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary outline-none text-base">
+                                 <option value="1">1 Student</option>
+                                 <option value="2">2 Students</option>
+                                 <option value="3">3 Students</option>
+                                 <option value="4">4 Students</option>
+                                 <option value="5">5 Students</option>
+                                 <option value="6">6 Students</option>
+                                 <option value="7">7 Students</option>
+                                 <option value="8">8 Students</option>
+                                 <option value="9">9 Students</option>
+                                 <option value="10">10 Students</option>
+                             </select>
+                        </div>
+
+                        <!-- Main Student -->
+                        <div class="p-4 border border-primary/20 bg-primary/5 rounded-lg">
+                            <h4 class="text-sm font-bold text-primary mb-2">Student 1 Details</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <input type="text" id="child1Name" name="childName[]" placeholder="Name" required class="w-full p-2 bg-white border border-gray-300 rounded-md text-base">
+                                <input type="number" id="child1Age" name="childAge[]" placeholder="Age" required class="w-full p-2 bg-white border border-gray-300 rounded-md text-base">
+                                <select id="child1Course" name="childCourse[]" class="w-full p-2 bg-white border border-gray-300 rounded-md md:col-span-2 text-base">
+                                    <option value="" disabled selected>Select Course</option>
+                                    <option value="Noorani Qaida">Noorani Qaida</option>
+                                    <option value="Tajweed">Tajweed</option>
+                                    <option value="Hifz">Hifz</option>
+                                    <option value="Translation">Translation</option>
+                                    <option value="Islamic Studies">Islamic Studies</option>
+                                    <option value="Other Course">Other Course</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Dynamic Fields -->
+                        <div id="dynamicFields" class="space-y-4"></div>
+
+                        <!-- Buttons -->
+                        <div class="flex flex-col gap-3 mt-4">
+                            <button type="button" onclick="submitForm('whatsapp')" class="w-full py-3 bg-green-500 text-white font-bold rounded-lg shadow hover:bg-green-600 transition-all flex justify-center items-center gap-2">
+                                <span>Submit via WhatsApp</span>
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                            </button>
+                            <button type="button" onclick="submitForm('email')" class="w-full py-3 bg-primary text-white font-bold rounded-lg shadow hover:bg-primaryDark transition-all flex justify-center items-center gap-2">
+                                <span>Submit via Email</span>
+                                <i class="fa-regular fa-envelope text-xl"></i>
+                            </button>
+                        </div>
+                        <p class="text-xs text-center text-gray-500 mt-2">Your message is ready! Click Send in your Email or WhatsApp to complete submission.</p>
+                    </form>
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <!-- Updated Grid to 5 Columns -->
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                <!-- Brand -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-book-quran text-2xl text-primary"></i>
+                        <span class="font-poppins font-bold text-xl text-white">ILMA</span>
+                    </div>
+                    <p class="text-sm leading-relaxed text-gray-400 mb-6">
+                        Dedicated to spreading the light of the Quran worldwide through modern technology and traditional teaching methods.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="hover:text-accent transition">Home</a></li>
+                        <li><a href="#why-us" class="hover:text-accent transition">Methodology</a></li>
+                        <li><a href="#courses" class="hover:text-accent transition">Courses</a></li>
+                        <li><a href="#pricing" class="hover:text-accent transition">Fee Structure</a></li>
+                    </ul>
+                </div>
+
+                <!-- Policies -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Policies</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><button onclick="openPolicy('privacy')" class="hover:text-accent transition text-left">Privacy Policy</button></li>
+                        <li><button onclick="openPolicy('refund')" class="hover:text-accent transition text-left">Refund Policy</button></li>
+                        <li><button onclick="openPolicy('cancellation')" class="hover:text-accent transition text-left">Cancellation</button></li>
+                        <li><button onclick="openPolicy('rescheduling')" class="hover:text-accent transition text-left">Rescheduling</button></li>
+                        <li><button onclick="openPolicy('payment')" class="hover:text-accent transition text-left">Payment Policy</button></li>
+                        <li><button onclick="openPolicy('conduct')" class="hover:text-accent transition text-left">Code of Conduct</button></li>
+                        <li><button onclick="openPolicy('terms')" class="hover:text-accent transition text-left">Terms of Service</button></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><i class="fa-brands fa-whatsapp w-6"></i> +92 335 2873002</li>
+                        <li><i class="fa-regular fa-envelope w-6 break-all"></i> academyilmaquran@gmail.com</li>
+                        <li><i class="fa-solid fa-location-dot w-6"></i> Online Worldwide</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-xs text-gray-500">
+                &copy; <span id="year"></span> ILMA Quran Academy. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= FLOATING WHATSAPP ================= -->
+    <a href="https://wa.me/923352873002?text=Assalamu%20Alaikum!%20I%20have%20a%20query." 
+       target="_blank"
+       rel="noopener noreferrer"
+       class="fixed bottom-6 right-6 z-[60] group">
+        <span class="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping"></span>
+        <div class="relative w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition duration-300">
+            <i class="fa-brands fa-whatsapp text-3xl text-white"></i>
+        </div>
+        <div class="absolute bottom-full right-0 mb-2 w-max px-3 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition duration-300 hidden md:block">
+            Chat with us
+        </div>
+    </a>
+
+    <!-- ================= MODAL ================= -->
+    <div id="articleModal" class="modal hidden fixed inset-0 z-[100] flex items-center justify-center bg-black/70 backdrop-blur-sm p-4">
+        <div class="modal-content bg-white rounded-2xl shadow-2xl w-full max-w-2xl overflow-hidden relative max-h-[90vh] flex flex-col m-4">
+            <!-- Cover Image Container -->
+            <div id="modalImageContainer" class="h-48 md:h-64 w-full relative shrink-0">
+                 <img id="modalImage" src="" alt="Cover" class="w-full h-full object-cover">
+                 <!-- Close Button -->
+                 <button onclick="closeArticle()" class="absolute top-4 right-4 bg-white/20 hover:bg-white/40 backdrop-blur-md text-white w-10 h-10 rounded-full flex items-center justify-center transition-all z-10 border border-white/30">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+                <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 pt-24">
+                     <h3 id="modalTitle" class="font-poppins font-bold text-xl md:text-3xl text-white shadow-sm leading-tight">Title</h3>
+                </div>
+            </div>
+
+            <!-- Scrollable Content -->
+            <div id="modalBody" class="p-6 md:p-8 text-gray-600 leading-relaxed text-base md:text-lg overflow-y-auto whitespace-pre-wrap">
+                <!-- Content goes here -->
+            </div>
+            
+            <div class="p-6 border-t bg-gray-50 flex justify-end shrink-0">
+                <button onclick="closeArticle()" class="px-6 py-2 bg-gray-200 text-gray-700 font-bold rounded-lg hover:bg-gray-300 transition">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100 });
+        document.getElementById('year').textContent = `2018-${new Date().getFullYear()}`;
+
+        // Mobile Menu
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const links = document.querySelectorAll('.mobile-link');
+        function toggleMenu() {
+            const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', !isExpanded);
+            menu.classList.toggle('hidden');
+        }
+        btn.addEventListener('click', toggleMenu);
+        links.forEach(link => link.addEventListener('click', () => {
+            menu.classList.add('hidden');
+            btn.setAttribute('aria-expanded', 'false');
+        }));
+
+        /* Booking Logic */
+        function bookCourse(courseName) {
+            const message = `Assalamu Alaikum! I am interested in the *${courseName}* course. Please provide more details.`;
+            const url = `https://wa.me/923352873002?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank', 'noopener,noreferrer');
+        }
+
+        /* POLICY CONTENT DATA */
+        const policies = {
+            privacy: `At ILMA Quran Academy, we respect your privacy and are committed to protecting your personal information.
+
+We only collect data necessary for delivering high-quality Quran learning services — such as your name, email, phone number, preferred class timings, and course details.
+
+How We Use Your Information:
+• To schedule and deliver Quran classes
+• To communicate regarding classes, billing, or support
+• To improve our services
+• To ensure teaching quality and safety
+
+We never sell or share your data with third parties for marketing.
+Your information remains confidential and secure.`,
+            
+            refund: `We offer a fair and simple refund policy.
+
+Refund Eligibility:
+You may request a refund if:
+• Technical issues continue from our side
+• You are not satisfied within the first 7 days
+• Classes were not delivered according to the package
+Refunds take 5–10 business days.
+
+Non-Refundable:
+• Classes already taken
+• Missed classes due to student-side issues
+• Special discount or promotional packages
+
+We aim to resolve issues with fairness.`,
+
+            cancellation: `You may cancel or change your package anytime.
+
+To Cancel:
+• Provide 7 days’ notice before the next billing
+• Inform your teacher or support team
+
+If you cancel mid-month:
+• You may continue classes until the paid cycle ends
+• No further charges will apply`,
+
+            rescheduling: `Rescheduling:
+• Allowed with at least 6 hours’ notice
+• Teachers will provide a suitable alternate slot if available
+
+Missed Classes:
+• Missed without notice are non-refundable
+• Makeup classes depend on teacher availability`,
+
+            payment: `Payments are monthly in advance.
+
+Acceptable methods: bank transfer, online payment, approved channels.
+Fees vary based on package, days, and number of students.
+Discounts require management approval.
+Invoices must be cleared before the next month begins.`,
+
+            conduct: `We ensure an Islamic, respectful learning environment.
+
+Students Must:
+• Attend class on time
+• Use respectful behavior
+• Keep cameras ON if required (optional for females)
+• Avoid inappropriate actions
+
+Teachers Must:
+• Maintain professionalism
+• Show patience and high-quality teaching
+• Provide regular progress
+
+Misconduct may lead to suspension or removal.`,
+
+            safety: `We prioritize child safety.
+
+• All classes are 1-on-1 or parent-supervised
+• Teachers follow ethical and respectful guidelines
+• No personal contact outside class
+• Parents may monitor anytime`,
+
+            discrimination: `We welcome all students equally.
+
+No discrimination based on:
+• Nationality
+• Gender
+• Language
+• Disability
+• Culture or background
+
+Equal respect and quality teaching for everyone.`,
+
+            terms: `By enrolling, you agree to:
+
+• Provide accurate details
+• Attend on time
+• Make payments on schedule
+• Follow teacher guidance
+• Use services for lawful educational purposes
+
+The academy may update policies to improve service quality.`
+        };
+
+        /* Modal Logic (Unified for Articles & Policies) */
+        function openArticle(title, content, image) {
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalBody').textContent = content;
+            document.getElementById('modalImage').src = image || 'https://images.unsplash.com/photo-1584286595398-a59f21d313f5?q=80&w=800&auto=format&fit=crop';
+            
+            const modal = document.getElementById('articleModal');
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function openPolicy(type) {
+            const titleMap = {
+                privacy: "Privacy Policy", refund: "Refund Policy", cancellation: "Cancellation Policy",
+                rescheduling: "Rescheduling Policy", payment: "Payment Policy", conduct: "Code of Conduct",
+                safety: "Child Safety Policy", discrimination: "Anti-Discrimination Policy", terms: "Terms of Service"
+            };
+            
+            // Use a generic soothing abstract image for all policies
+            const policyImage = "https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=1000&auto=format&fit=crop";
+            
+            openArticle(titleMap[type], policies[type], policyImage);
+        }
+
+        function closeArticle() {
+            const modal = document.getElementById('articleModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        document.getElementById('articleModal').addEventListener('click', function(e) {
+            if (e.target === this) closeArticle();
+        });
+
+        /* Dynamic Form Fields */
+        function updateChildFields() {
+            const count = parseInt(document.getElementById('studentCount').value);
+            const container = document.getElementById('dynamicFields');
+            container.innerHTML = ''; 
+
+            for (let i = 2; i <= count; i++) {
+                const html = `
+                    <div class="p-4 border border-gray-200 bg-gray-50 rounded-lg fade-in">
+                        <h4 class="text-sm font-bold text-gray-600 mb-2">Student ${i} Details</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input type="text" name="childName[]" class="child-name w-full p-2 bg-white border border-gray-300 rounded-md text-base" placeholder="Name" required>
+                            <input type="number" name="childAge[]" class="child-age w-full p-2 bg-white border border-gray-300 rounded-md text-base" placeholder="Age" required>
+                            <select name="childCourse[]" class="child-course w-full p-2 bg-white border border-gray-300 rounded-md md:col-span-2 text-base">
+                                <option value="" disabled selected>Select Course</option>
+                                <option value="Noorani Qaida">Noorani Qaida</option>
+                                <option value="Tajweed">Tajweed</option>
+                                <option value="Hifz">Hifz</option>
+                                <option value="Translation">Translation</option>
+                                <option value="Islamic Studies">Islamic Studies</option>
+                                <option value="Other Course">Other Course</option>
+                            </select>
+                        </div>
+                    </div>
+                `;
+                container.insertAdjacentHTML('beforeend', html);
+            }
+        }
+
+        /* Form Submission */
+        function sanitizeInput(str) { return str ? str.replace(/</g, "&lt;").replace(/>/g, "&gt;") : ""; }
+        function validateForm() {
+            if(!document.getElementById('parentName').value || !document.getElementById('whatsapp').value || !document.getElementById('country').value) {
+                alert("Please fill in all required fields marked with *");
+                return false;
+            }
+            return true;
+        }
+
+        function submitForm(method) {
+            if (!validateForm()) return;
+            const parent = sanitizeInput(document.getElementById('parentName').value);
+            const whatsapp = sanitizeInput(document.getElementById('whatsapp').value);
+            const country = sanitizeInput(document.getElementById('country').value);
+            const studentCount = document.getElementById('studentCount').value;
+
+            const child1Name = sanitizeInput(document.getElementById('child1Name').value);
+            const child1Age = sanitizeInput(document.getElementById('child1Age').value);
+            const child1Course = sanitizeInput(document.getElementById('child1Course').value) || 'Not Selected';
+            let studentsData = `Student 1: ${child1Name} (${child1Age} yrs) - ${child1Course}`;
+
+            const extraNames = document.querySelectorAll('.child-name');
+            const extraAges = document.querySelectorAll('.child-age');
+            const extraCourses = document.querySelectorAll('.child-course');
+            
+            if(extraNames.length > 0) {
+                extraNames.forEach((input, index) => {
+                    const name = sanitizeInput(input.value);
+                    const age = sanitizeInput(extraAges[index].value);
+                    const course = sanitizeInput(extraCourses[index].value) || 'Not Selected';
+                    studentsData += `\nStudent ${index + 2}: ${name} (${age} yrs) - ${course}`;
+                });
+            }
+
+            const messageBody = `
+NEW ADMISSION INQUIRY
+----------------------
+Parent: ${parent}
+Contact: ${whatsapp}
+Country: ${country}
+Total Students: ${studentCount}
+
+Student Details:
+${studentsData}
+            `.trim();
+
+            if (method === 'whatsapp') {
+                const cleanPhone = whatsapp.replace(/[^0-9+]/g, '');
+                const waMessage = `*NEW ADMISSION INQUIRY*%0a----------------------%0a*Parent:* ${parent}%0a*Contact:* ${cleanPhone}%0a*Country:* ${country}%0a*Students:* ${studentCount}%0a%0a*Details:*%0a${studentsData.replace(/\n/g, '%0a')}`;
+                window.open(`https://wa.me/923352873002?text=${waMessage}`, '_blank', 'noopener,noreferrer');
+            } else {
+                window.location.href = `mailto:academyilmaquran@gmail.com?subject=3 Days Free Trial Class - ${parent}&body=${encodeURIComponent(messageBody)}`;
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('navbar');
+            if (window.scrollY > 50) { header.classList.add('shadow-md'); header.classList.replace('bg-white/95', 'bg-white'); }
+            else { header.classList.remove('shadow-md'); header.classList.replace('bg-white', 'bg-white/95'); }
+        });
+    </script>
+</body>
+</html>
